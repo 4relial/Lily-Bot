@@ -1,10 +1,6 @@
 {
   "name": "whatsapp-bot",
-  "version": "1.0.1",
-  "description": "lightweight Whatsapp Bot",
-  "main": "index.js",
   "scripts": {
-    "test": "",
     "start": "pm2-runtime start ecosystem.config.js --env production" 
   },
   "repository": {
