@@ -26,7 +26,7 @@ const delay = require('delay');
 const anilist = require('anilist-node');
 const ytdl = require("ytdl-core")
 const { exec } = require("child_process");
-const zc = require('zerochan-scraper');
+const zc = require('./anu/zr.js');
 
 const inPdfInput = [];
 const questionAnswer = {};
@@ -2137,7 +2137,7 @@ _Team Hitotsuyanagi_`;
 			return;}
 			 if (!message.key.fromMe && !isOwner && !isGroupAdmins && isMute) return
 			const text = `_tierlist hanya sebagai referensi_`;
-            const ririAb = fs.readFileSync("database/er/tier.jpg");
+            const ririAb = fs.readFileSync("anu/er/tier.jpg");
 		    await conn.sendMessage(senderNumber, ririAb, MessageType.image, { quoted: message, caption: text });
 			break;
 		}	
@@ -2154,7 +2154,7 @@ _Team Hitotsuyanagi_`;
             const thumb = `${response}`; 
 			const text = `Build ${parameter}`;
 		try {
-            const build = fs.readFileSync(`database/buildgi/${parameter}.jpeg`);
+            const build = fs.readFileSync(`anu/buildgi/${parameter}.jpeg`);
 		    await conn.sendMessage(senderNumber, build, MessageType.image, { quoted: message, caption: text, thumbnail: thumb });
 		} catch (e) {
 			conn.sendMessage(senderNumber, "Karakter tidak ditemukan!", MessageType.text, { quoted: message });
@@ -2176,7 +2176,7 @@ _Team Hitotsuyanagi_`;
             const thumb = `${response}`; 
 			const text = `Material Ascend dan Talent ${parameter}`;
 		try {
-            const build = fs.readFileSync(`database/materialgi/${parameter}.jpg`);
+            const build = fs.readFileSync(`anu/materialgi/${parameter}.jpg`);
 		    await conn.sendMessage(senderNumber, build, MessageType.image, { quoted: message, caption: text, thumbnail: thumb });
 		} catch (e) {
 			conn.sendMessage(senderNumber, "Karakter tidak ditemukan!", MessageType.text, { quoted: message });
@@ -2237,7 +2237,7 @@ _Team Hitotsuyanagi_`;
             const thumb = `${response}`; 
 			const text = `Ini Rekomendasi Signet nya Kapten!`;
 		try {
-            const build = fs.readFileSync(`database/er/${parameter}.jpg`);
+            const build = fs.readFileSync(`anu/er/${parameter}.jpg`);
 		    await conn.sendMessage(senderNumber, build, MessageType.image, { quoted: message, caption: text, thumbnail: thumb });
 		} catch (e) {
 			conn.sendMessage(senderNumber, "Karakter tidak ditemukan!", MessageType.text, { quoted: message });
