@@ -1,5 +1,4 @@
 node_modules
-login.json
 .temp
 package-lock.json
 yarn.lock

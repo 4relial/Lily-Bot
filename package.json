@@ -5,16 +5,16 @@
   "main": "index.js",
   "scripts": {
     "test": "",
-    "start": "node index.js"
+    "start": "pm2-runtime start ecosystem.config.js --env production" 
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/salismazaya/whatsapp-bot.git"
+    "url": "https://github.com/4relial/Lily-Bot"
   },
-  "author": "Salis Mazaya",
+  "author": "Arelial ID",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/salismazaya/whatsapp-bot/issues"
+    "url": "https://github.com/4relial/Lily-Bot/issues"
   },
   "homepage": "https://github.com/salismazaya/whatsapp-bot#readme",
   "dependencies": {
